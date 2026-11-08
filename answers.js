@@ -11,7 +11,6 @@ window.ANSWERS = {
     "Outlook good. Your track record, less so.",
     "Yes. Don't make it weird.",
     "Most likely, if you actually try for once."
-  
   ],
   maybe: [
     "Reply hazy. I was busy being a ball.",
