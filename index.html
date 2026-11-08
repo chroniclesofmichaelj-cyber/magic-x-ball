@@ -13,7 +13,21 @@
     <button class="ball" id="ball" type="button" aria-label="Shake the magic X ball">
       <span class="ball__shine" aria-hidden="true"></span>
       <span class="ball__face ball__face--mark" aria-hidden="true">
-        <span class="mark">X</span>
+        <svg class="eye" viewBox="0 0 100 100">
+          <g class="eye__lid">
+            <path d="M8 50 Q50 12 92 50 Q50 88 8 50 Z" fill="#fff" stroke="#14121c" stroke-width="5" stroke-linejoin="round"/>
+            <circle cx="50" cy="50" r="19" fill="url(#iris)"/>
+            <circle cx="50" cy="50" r="9" fill="#14121c"/>
+            <circle cx="56" cy="43" r="4.5" fill="#fff"/>
+          </g>
+          <defs>
+            <radialGradient id="iris" cx="45%" cy="40%" r="65%">
+              <stop offset="0" stop-color="#ff8fab"/>
+              <stop offset=".6" stop-color="#c2378a"/>
+              <stop offset="1" stop-color="#5b1a6e"/>
+            </radialGradient>
+          </defs>
+        </svg>
       </span>
       <span class="ball__face ball__face--window" aria-hidden="true">
         <span class="triangle">

@@ -80,12 +80,18 @@ html, body {
   background: radial-gradient(circle at 40% 35%, #ffffff, #dcd9d2 70%, #b9b5ac);
   box-shadow: inset -.8vmin -1vmin 2vmin rgba(0,0,0,.25);
 }
-.mark {
-  font-size: calc(var(--ball-size) * .3);
-  font-weight: 800;
-  color: #0b0b0f;
-  line-height: 1;
-  transform: translateY(2%);
+.eye {
+  width: 78%;
+  height: 78%;
+  overflow: visible;
+}
+.eye__lid {
+  transform-origin: 50% 50%;
+  animation: blink 5s infinite;
+}
+@keyframes blink {
+  0%, 92%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(.08); }
 }
 
 .ball__face--window {
@@ -211,6 +217,7 @@ html, body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .eye__lid { animation: none; }
   .ball.is-shaking { animation-duration: .01s; }
   .triangle { transition-duration: .3s; transform: none; }
 }
